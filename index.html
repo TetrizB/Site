@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Starbucks Website Landing Page</title>
+ 
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+    <header class="cabecalho">
+        <a href="#" class="logo"><img src="Logo.png"></a>
+        <ul>
+            <li> <a href="#"> Home</a></li>
+            <li> <a href="#"> Menu</a></li>
+            <li> <a href="#"> O que tem de novo?</a></li>
+            <li> <a href="#"> Contato</a></li>
+        </ul>
+        
+    </header>
+    <div class="content">
+    <div class="textBox">
+        <h2> Não é só café<br> É <span> Starbucks</span></h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisincing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enin ex ea commodo.</p>
+            <a href="#">Leia mais</a>
+    </div >
+            <div class="imgBox">
+                <img src ="img1.png" class="starbucks">
+              </div>
+    </div>
+    <ul class="thumb">
+        <li> <img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+        <li> <img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+        <li> <img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+        <li> <a href="facebook.com" ><img src="facebook.png"></a> </li>
+        <li> <a href="twitter.com " ><img src="twitter.png"></a> </li>
+        <li> <a href="instagram.com" ><img src="instagram.png"></a> </li>
+    </ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything){
+    document.querySelector('.starbucks').src= anything;
+}
+
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.backgound = color;
+}
+</script>
+</body>
+</html>
